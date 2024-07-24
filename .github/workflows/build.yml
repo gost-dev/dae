@@ -12,18 +12,19 @@
 name: Build (Main)
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "**/*.go"
-      - "**/*.c"
-      - "**/*.h"
-      - "go.mod"
-      - "go.sum"
-      - ".github/workflows/build.yml"
-      - ".github/workflows/seed-build.yml"
-      - "Makefile"
+  # push:
+  #   branches:
+  #     - main
+  #   paths:
+  #     - "**/*.go"
+  #     - "**/*.c"
+  #     - "**/*.h"
+  #     - "go.mod"
+  #     - "go.sum"
+  #     - ".github/workflows/build.yml"
+  #     - ".github/workflows/seed-build.yml"
+  #     - "Makefile"
+  workflow_dispatch
 
 jobs:
   pre-actions:
