@@ -2,16 +2,16 @@ name: Docker
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - "**/*.go"
-      - "**/*.c"
-      - "**/*.h"
-      - "go.mod"
-      - "go.sum"
-      - ".github/workflows/docker.yml"
+  # push:
+  #   branches:
+  #     - main
+  #   paths:
+  #     - "**/*.go"
+  #     - "**/*.c"
+  #     - "**/*.h"
+  #     - "go.mod"
+  #     - "go.sum"
+  #     - ".github/workflows/docker.yml"
   release:
     types: [ prereleased ]
 
