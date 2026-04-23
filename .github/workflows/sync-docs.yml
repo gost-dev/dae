@@ -2,21 +2,21 @@ name: Synchronize Documents
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-      - 'ci/**'
-      - 'release/**'
-    tags:
-      - 'v*'
-    paths:
-      - "README*.md"
-      - "docs/**"
-      - "example.dae"
-      - "package.json"
-      - ".autocorrectrc"
-      - ".markdownlint-cli2.jsonc"
-      - '.github/workflows/sync-docs.yml'
+  # push:
+  #   branches:
+  #     - main
+  #     - 'ci/**'
+  #     - 'release/**'
+  #   tags:
+  #     - 'v*'
+  #   paths:
+  #     - "README*.md"
+  #     - "docs/**"
+  #     - "example.dae"
+  #     - "package.json"
+  #     - ".autocorrectrc"
+  #     - ".markdownlint-cli2.jsonc"
+  #     - '.github/workflows/sync-docs.yml'
 
 jobs:
   check-docs:
